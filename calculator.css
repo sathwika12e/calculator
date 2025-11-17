@@ -1,0 +1,57 @@
+.table1{
+    
+    height:500px;
+    width:470px;
+    background-color: rgb(19, 19, 19);
+    border-radius: 20px;
+    margin-top:15vh;
+    margin-left:25vw;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.btn{
+    color:rgb(3, 3, 3);
+     background-color: #ee9c3f;
+    border-radius: 20px;
+    height:60px;
+    margin-left:15px;
+    margin-top:15px;
+    width:60px;
+    font-size: 18px;
+}
+.btn2{
+     color:white;
+     background-color: rgb(238, 119, 63);
+    border-radius: 25px;
+     height:60px;
+    margin-left:15px;
+    margin-top:15px;
+    width:60px;
+    font-size: 18px;
+}
+#textbox{
+    padding-left: 10px;
+    font-size: 20px;
+    border:2px solid gray;
+    border-radius: 8px;
+    margin-top:30px;
+    margin-left: 50px;
+    margin-right:50px;
+    height:40px;
+    width:400px;
+}
+.innerdiv{
+    border-radius: 20px;
+    margin-left:60px;
+    background-color: rgb(93, 93, 90);
+
+  
+    justify-content: space-evenly;
+    
+    width:350px;
+    height:370px;
+    padding-bottom:15px;
+    
+}

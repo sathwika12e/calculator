@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="calculator.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+   <!-- HTML -->
+<div class="table1" >
+    <input  id="textbox" type="text"><br>
+    <div class="innerdiv">
+    <button class="btn">0</button>
+    <button class="btn">1</button>
+    <button class="btn">2</button>
+    <button class="btn">3</button>
+    
+    <button class="btn">4</button>
+    <button class="btn">5</button>
+    <button class="btn">6</button>
+    
+    <button class="btn">7</button>
+    <button class="btn">+</button>
+    <button class="btn">-</button>
+    <button class="btn">8</button>
+    <button class="btn">9</button>
+    <button class="btn">+</button>
+    <button class="btn">-</button>
+    
+    <button class="btn">*</button>
+    <button class="btn">/</button>
+    <button class="btn">.</button>
+    <button class="btn2" onclick="delclick()">del</button>
+   <!--  <button class="btn">**</button>  --> 
+    <button class="btn2" onclick="eqclick()" id="eqbtn">=</button>
+    <button class="btn2" onclick="clrclick()">clr</button>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script type="text/javascript">
+    let buttons = document.querySelectorAll(".btn");
+    buttons.forEach(button => {
+        button.addEventListener('click', func);
+    });
+   str=""
+    function func(event) {
+        let textbox=document.getElementById("textbox")
+        str=str+event.target.innerText;
+        textbox.value=str
+    let eqbtn=document.getElementById("eqbtn")
+    
+    }
+    function eqclick(){
+        textbox.value=eval(textbox.value)
+        str=textbox.value
+        
+
+    }
+    function clrclick(){
+        textbox.value=""
+        str=""
+    }
+    function delclick(){
+        text=textbox.value
+        len=text.length
+        textbox.value=text.slice(0,len-1)
+        str=textbox.value
+    }
+</script>
+</body>
+</html>
